@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <header class="header-main">
+    <nav class="nav-main">
+      <ul class="site-nav">
+        <li class="site-nav__element">
+          <a href="#">Информация</a>
+        </li>
+        <li class="site-nav__element">
+          <a href="#">Фото и видео</a>
+        </li>
+        <li class="site-nav__element logo">
+          <a class="logo">
+            <img src="/img/logo-sedona.png" alt="Седона" width="138" height="70">
+          </a>
+        </li>
+        <li class="site-nav__element">
+          <a href="#">Карта штата</a>
+        </li>
+        <li class="site-nav__element">
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container-main">
+    <section class="hero">
+      <h2 class="visually-hidden">Welcome to the gorgeous Sedona!</h2>
+      <!-- h2 перед h1 никуда не годится. а h1 слишком жирно для этого блока -->
+      <img src="/img/promo-text.png" class="hero__image" alt="Welcome to the gorgeous SEDONA &#8220;Because the Grand Canyon sucks! &#8221;" width="458" height="352">
+    </section>
+    <section class="reasons">
+      <h1 class="reasons__header">Седона - небольшой городок в Аризоне,
+        <br>заслуживающий большего!</h1>
+      <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <ol class="reasons__list">
+        <li class="reasons__item reasons__item--large reasons__item--left">
+          <h2 class="item__header">Настоящий городок</h2>
+          <!-- тут скорее всего ещё обёртка понадобится, или нет. -->
+          <p class="item__number">№1</p>
+          <p class="item__slogan">Седона &ndash; не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
+          <img src="/img/real-town.jpg" alt="Седона &ndash; настоящий городок" class="item__image" width="800" height="256">
+          <ul class="item__features">
+            <li class="feature">
+              <h3 class="feature__header housing">Жилье</h3>
+              <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="feature">
+              <h3 class="feature__header food">Еда</h3>
+              <p class="feature__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!</p>
+            </li>
+            <li class="feature">
+              <h3 class="feature__header souvenirs">Сувениры</h3>
+              <p class="feature__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="reasons__item reasons__item--large reasons__item--right">
+          <h2 class="item__header">Там есть Мост дьявола</h2>
+          <p class="item__number">№2</p>
+          <p class="item__slogan">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <img src="/img/devils-bridge.jpg" alt="Мост дьявола в Седоне" class="item__image" width="800" height="256">
+        </li>
+        <li class="reasons__item">
+          <h2 class="item__header">Небольшая площадь</h2>
+          <p class="item__number">№3</p>
+          <p class="item__slogan">ВСЕ достопримечательности находятся очень близко</p>
+        </li>
+        <li class="reasons__item">
+          <h2 class="item__header">Красивая дорога</h2>
+          <p class="item__number">№4</p>
+          <p class="item__slogan">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        </li>
+        <li class="reasons__item">
+          <h2 class="item__header">Мало туристов</h2>
+          <p class="item__number">№5</p>
+          <p class="item__slogan">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ol>
+    </section>
+    <section class="booking">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки,
+        <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a href="#find-hotel" class="btn booking__btn">Поиск гостиницы в Седоне</a>
+      <!-- это важная функциональность, поэтому ссылка, которая работает даже без js -->
+      <form action=https://echo.htmlacademy.ru class="booking__form" name="form-booking" id="find-hotel" method="get">
+        <p class="form__field form__field--large">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="arrival" id="arrival-date" value="2017-04-24">
+        </p>
+        <p class="form__field form__field--large">
+          <label for="departure-date">Дата выезда:</label>
+          <input type="date" name="departure" id="departure-date" value="2017-06-04">
+        </p>
+        <p class="form__field">
+          <label for="adults-count">Взрослые:</label>
+          <a href="#" class="number-decrease" aria-label="Уменьшить количество"></a>
+          <input type="number" name="adults" id="adults-count" value="2">
+          <a href="#" class="number-decrease" aria-label="Увеличить количество"></a>
+        </p>
+        <p class="form__field">
+          <label for="children-count">Взрослые:</label>
+          <a href="#" class="number-decrease" aria-label="Уменьшить количество"></a>
+          <input type="number" name="children" id="children-count" value="2">
+          <a href="#" class="number-decrease" aria-label="Увеличить количество"></a>
+        </p>
+        <input class="btn submit__btn" type="submit" value="Найти">
+      </form>
+    </section>
+  </main>
+  <footer class="footer-main">
+    <p class="hashtag">#visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item twitter">
+        <a href="#">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+      <li class="social-list__item facebook">
+        <a href="#">
+          <span class="visually-hidden">facebook</span>
+        </a>
+      </li>
+      <li class="social-list__item youtube">
+        <a href="#">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+    <p class="credits">website by
+      <img src="/img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
+    </p>
+
+  </footer>
+  <!-- <script src="js/script.min.js"></script> -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
