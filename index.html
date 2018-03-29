@@ -12,23 +12,21 @@
 
 <body>
   <header class="header-main">
+    <a class="logo">
+      <img src="/img/logo-sedona.png" alt="Седона" width="138" height="70">
+    </a>
     <nav class="nav-main">
       <ul class="site-nav">
-        <li class="site-nav__element">
+        <li class="site-nav__element site-nav__element--left">
           <a href="#">Информация</a>
         </li>
-        <li class="site-nav__element">
+        <li class="site-nav__element site-nav__element--left">
           <a href="#">Фото и видео</a>
         </li>
-        <li class="site-nav__element logo">
-          <a class="logo">
-            <img src="/img/logo-sedona.png" alt="Седона" width="138" height="70">
-          </a>
-        </li>
-        <li class="site-nav__element">
+        <li class="site-nav__element site-nav__element--right">
           <a href="#">Карта штата</a>
         </li>
-        <li class="site-nav__element">
+        <li class="site-nav__element site-nav__element--right">
           <a href="catalog.html">Гостиницы</a>
         </li>
       </ul>
@@ -40,52 +38,55 @@
       <img src="/img/promo-text.png" class="hero__image" alt="Welcome to the gorgeous SEDONA &#8220;Because the Grand Canyon sucks! &#8221;" width="458" height="352">
     </section>
     <section class="reasons">
-      <h1 class="reasons__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="reasons__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <section class="reasons__item reasons__item--large reasons__item--left">
         <div class="item">
           <h2 class="item__header">Настоящий городок</h2>
           <span class="item__number">— №1 —</span>
-          <p class="item__slogan">Седона &ndash; не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
+          <p class="item__slogan">Седона &ndash; не&nbsp;аттракцион для туристов, там&nbsp;течет своя жизнь</p>
         </div>
-        <div class="item__image">
-          <img src="/img/real-town.jpg" alt="Седона &ndash; настоящий городок" width="800" height="256">
+        <div class="item__image item__image--real-town">
+          <!-- <img src="/img/real-town.jpg" alt="Седона &ndash; настоящий городок" width="800" height="400"> -->
         </div>
       </section>
       <section class="features">
-        <li class="features__item">
-          <h3 class="features__header housing">Жилье</h3>
-          <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__header food">Еда</h3>
-          <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__header souvenirs">Сувениры</h3>
-          <p class="features__description">Не только китайского, но и местного производства!</p>
-        </li>
+        <ul class="features__list">
+          <li class="features__item features__item--housing">
+            <h3 class="features__header">Жилье</h3>
+            <p class="features__description">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+          </li>
+          <li class="features__item features__item--food">
+            <h3 class="features__header">Еда</h3>
+            <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!</p>
+          </li>
+          <li class="features__item features__item--souvenirs">
+            <h3 class="features__header">Сувениры</h3>
+            <p class="features__description">Не только китайского, но&nbsp;и&nbsp;местного производства!</p>
+          </li>
+        </ul>
       </section>
       <section class="reasons__item reasons__item--large reasons__item--right">
         <div class="item">
-          <h2 class="item__header">Там есть Мост дьявола</h2>
+          <h2 class="item__header">Там есть Мост&nbsp;дьявола</h2>
           <span class="item__number">— №2 —</span>
           <p class="item__slogan">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="item__image">
-          <img src="/img/devils-bridge.jpg" alt="Мост дьявола в Седоне" class="item__image" width="800" height="256">
+        <div class="item__image item__image--devils-bridge">
+          <!-- <img src="/img/devils-bridge.jpg" alt="Мост дьявола в Седоне" class="item__image" width="800" height="256"> -->
         </div>
       </section>
       <section class="reasons__item reasons__item--small">
         <div class="item">
           <h2 class="item__header">Небольшая площадь</h2>
           <span class="item__number">— №3 —</span>
-          <p class="item__slogan">ВСЕ достопримечательности находятся очень близко</p>
+          <p class="item__slogan">ВСЕ достопримеча&shy;тельности находятся очень&nbsp;близко</p>
         </div>
         <div class="item">
           <h2 class="item__header">Красивая дорога</h2>
           <span class="item__number">— №4 —</span>
-          <p class="item__slogan">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          <p class="item__slogan">ЕХАТЬ В СЕДОНУ ИЗ
+            <span class="nobr">ЛАС-ВЕГАСА</span> совсем НЕ&nbsp;СКУЧНО!</p>
         </div>
         <div class="item">
           <h2 class="item__header">Мало туристов</h2>
@@ -95,59 +96,77 @@
       </section>
     </section>
     <section class="booking">
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <!-- стилизовать через :target не получится, может сделать скрытый чекбокс? -->
-      <a href="#" class="btn booking__btn">Поиск гостиницы в Седоне</a>
-      <form action=https://echo.htmlacademy.ru class="booking__form booking-form" name="form-booking" id="find-hotel" method="get">
-        <p class="booking-form__field booking-form__field--large">
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="date" name="arrival" id="arrival-date" value="2017-04-24">
-        </p>
-        <p class="booking-form__field booking-form__field--large">
-          <label for="departure-date">Дата выезда:</label>
-          <input type="date" name="departure" id="departure-date" value="2017-06-04">
-        </p>
-        <p class="booking-form__field">
-          <label for="adults-count">Взрослые:</label>
-          <a href="#" class="number-decrease" aria-label="Уменьшить количество"></a>
-          <input type="number" name="adults" id="adults-count" value="2">
-          <a href="#" class="number-decrease" aria-label="Увеличить количество"></a>
-        </p>
-        <p class="booking-form__field">
-          <label for="children-count">Взрослые:</label>
-          <a href="#" class="number-decrease" aria-label="Уменьшить количество"></a>
-          <input type="number" name="children" id="children-count" value="2">
-          <a href="#" class="number-decrease" aria-label="Увеличить количество"></a>
-        </p>
-        <input class="btn booking-form__submit" type="submit" value="Найти">
-      </form>
+      <h2 class="booking__header">Заинтересовались?</h2>
+      <p class="booking__slogan">Укажите предполагаемые даты поездки,
+        <br> и&nbsp;мы&nbsp;покажем&nbsp;вам лучшие предложения гостиниц в&nbsp;седоне</p>
+      <!-- всё просто. По умолчанию покажу. При загрузке скриптов спрячу -->
+      <div class="booking__wrapper">
+        <button type="button" class="btn booking__btn">
+          <span class="ie-sucks">Поиск гостиницы в Седоне</span>
+        </button>
+        <form action=https://echo.htmlacademy.ru class="booking__form booking-form" name="form-booking" id="find-hotel" method="get">
+          <div class="booking-form__field booking-form__field--large booking-form__field--date">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text" name="arrival" id="arrival-date" value="24 апреля 2017">
+            <div class="booking-form__icon--calendar"></div>
+          </div>
+          <div class="booking-form__field booking-form__field--large booking-form__field--date">
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text" name="departure" id="departure-date" value="4 июня 2017">
+            <div class="booking-form__icon--calendar"></div>
+          </div>
+          <div class="booking-form__field booking-form__field--number">
+            <label for="adults-count">Взрослые:</label>
+            <div class="custom-number">
+              <a href="#" class="custom-number__decrease" aria-label="Уменьшить количество"></a>
+              <input type="number" name="adults" id="adults-count" value="2">
+              <a href="#" class="custom-number__increase" aria-label="Увеличить количество"></a>
+            </div>
+          </div>
+          <div class="booking-form__field booking-form__field--number">
+            <label for="children-count">Дети:</label>
+            <div class="custom-number">
+              <a href="#" class="custom-number__decrease" aria-label="Уменьшить количество"></a>
+              <input type="number" name="children" id="children-count" value="2">
+              <a href="#" class="custom-number__increase" aria-label="Увеличить количество"></a>
+            </div>
+          </div>
+          <button class="btn booking-form__submit" type="submit">
+            <span class="ie-sucks">Найти</span>
+          </button>
+        </form>
+      </div>
+      <div class="booking__map">
+        <iframe class="booking__iframe" src="https://maps.google.com/maps?width=1200&amp;height=593&amp;hl=ru&amp;q=седона&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed"></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer-main">
-    <div class="hashtag__wrapper">
-      <a class="hashtag" href="#">#visitsedona</a>
+    <div class="hashtag">
+      <a class="hashtag__link" href="#">#visitsedona</a>
     </div>
     <ul class="social-list">
-      <li class="social-list__item twitter">
-        <a href="#">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#">
           <span class="visually-hidden">twitter</span>
         </a>
       </li>
-      <li class="social-list__item facebook">
-        <a href="#">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#">
           <span class="visually-hidden">facebook</span>
         </a>
       </li>
-      <li class="social-list__item youtube">
-        <a href="#">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="#">
           <span class="visually-hidden">youtube</span>
         </a>
       </li>
     </ul>
-    <div class="credits__wrapper">
-      <a class="credits" href="https://htmlacademy.ru/intensive/htmlcss">website by
-        <img src="/img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
+    <div class="credits">
+      <span class="credits__text">website by</span>
+      <a class="credits__link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <!-- <img src="/img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41"> -->
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>
   </footer>

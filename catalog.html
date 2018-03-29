@@ -10,23 +10,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <header class="header-main">
+  <a class="logo" href="index.html">
+    <img src="/img/logo-sedona.png" alt="Седона" width="138" height="70">
+  </a>
   <nav class="nav-main">
     <ul class="site-nav">
-      <li class="site-nav__element">
+      <li class="site-nav__element site-nav__element--left">
         <a href="#">Информация</a>
       </li>
-      <li class="site-nav__element">
+      <li class="site-nav__element site-nav__element--left">
         <a href="#">Фото и видео</a>
       </li>
-      <li class="site-nav__element logo">
-        <a class="logo" href="index.html">
-          <img src="/img/logo-sedona.png" alt="Седона" width="138" height="70">
-        </a>
-      </li>
-      <li class="site-nav__element">
+      <li class="site-nav__element site-nav__element--right">
         <a href="#">Карта штата</a>
       </li>
-      <li class="site-nav__element">
+      <li class="site-nav__element site-nav__element--right">
         <a>Гостиницы</a>
       </li>
     </ul>
@@ -127,9 +125,9 @@
             <img src="/img/amara-resort.jpg" alt="Amara resort &amp; spa" width="135" height="90">
           </div>
           <div class="hotel-card__inner">
-            <a class="hotel-card__link" href="#">
-              <h2 class="hotel-card__name">Amara Resort &amp; Spa</h2>
-            </a>
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__link" href="#">Amara Resort &amp; Spa</a>
+            </h2>
             <span class="hotel-card__type">Гостиница</span>
             <span class="hotel-card__price">от 4000 р.</span>
             <div class="hotel-card__controls">
@@ -151,9 +149,9 @@
             <img src="/img/desert-quail.jpg" alt="Desert Quail Inn" width="135" height="90">
           </div>
           <div class="hotel-card__inner">
-            <a class="hotel-card__link" href="#">
-              <h2 class="hotel-card__name">Desert Quail Inn</h2>
-            </a>
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__link" href="#">Desert Quail Inn</a>
+            </h2>
             <span class="hotel-card__type">Мотель</span>
             <span class="hotel-card__price">от 3000 р.</span>
             <div class="hotel-card__controls">
@@ -175,9 +173,9 @@
             <img src="/img/villas-at-poco.jpg" alt="Villas at Poco Diablo" width="135" height="90">
           </div>
           <div class="hotel-card__inner">
-            <a class="hotel-card__link" href="#">
-              <h2 class="hotel-card__name">Villas at Poco Diablo</h2>
-            </a>
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__link" href="#">Villas at Poco Diablo</a>
+            </h2>
             <span class="hotel-card__type">Апартаменты</span>
             <span class="hotel-card__price">от 2000 р.</span>
             <div class="hotel-card__controls">
@@ -197,29 +195,31 @@
   </section>
 </main>
 <footer class="footer-main">
-  <div class="hashtag__wrapper">
-    <a class="hashtag" href="#">#visitsedona</a>
+  <div class="hashtag">
+    <a class="hashtag__link" href="#">#visitsedona</a>
   </div>
   <ul class="social-list">
-    <li class="social-list__item twitter">
-      <a href="#">
+    <li class="social-list__item">
+      <a class="social-list__link social-list__link--twitter" href="#">
         <span class="visually-hidden">twitter</span>
       </a>
     </li>
-    <li class="social-list__item facebook">
-      <a href="#">
+    <li class="social-list__item">
+      <a class="social-list__link social-list__link--facebook" href="#">
         <span class="visually-hidden">facebook</span>
       </a>
     </li>
-    <li class="social-list__item youtube">
-      <a href="#">
+    <li class="social-list__item">
+      <a class="social-list__link social-list__link--youtube" href="#">
         <span class="visually-hidden">youtube</span>
       </a>
     </li>
   </ul>
-  <div class="credits__wrapper">
-    <a class="credits" href="https://htmlacademy.ru/intensive/htmlcss">website by
-      <img src="/img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
+  <div class="credits">
+    <span class="credits__text">website by</span>
+    <a class="credits__link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <!-- <img src="/img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41"> -->
+      <span class="visually-hidden">HTML Academy</span>
     </a>
   </div>
 </footer>
