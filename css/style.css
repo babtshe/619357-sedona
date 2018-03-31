@@ -429,6 +429,7 @@ booking — ====================================================================
 
 .booking__wrapper {
   position: relative;
+  max-height:86px;
 }
 
 .booking__btn {
@@ -501,6 +502,16 @@ form — =======================================================================
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.26s ease;
+
+}
+
+.booking-form--hidden {
+  transform: scaleY(0);
+  visibility:hidden;
 }
 
 .booking-form__field {
@@ -697,6 +708,7 @@ form — =======================================================================
 .booking-form__submit:focus {
   outline: 1px dotted rgba(0, 0, 0, 0.3);
 }
+
 
 /*
 footer — ==============================================================================================================
@@ -1408,4 +1420,118 @@ search-results — =============================================================
   text-align: center;
 
   background-color: #f2f2f2;
+}
+
+/*
+animations — ==============================================================================================================
+*/
+
+.error-animation {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+.error-animation--toggle {
+  -webkit-animation: shake-toggle 0.6s;
+          animation: shake-toggle 0.6s;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes shake-toggle {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake-toggle {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
