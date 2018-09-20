@@ -1,0 +1,13 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "description": "Учебный проект Седона",
+  "private": true,
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babtshe/619357-sedona.git"
+  }
+}
